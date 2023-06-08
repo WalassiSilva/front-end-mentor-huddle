@@ -1,11 +1,53 @@
+/* MEDIA QUERY ATE 1024 */
+@media(min-width:769px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
 
-@media (max-width: 1025px) {
+    .container {
+        max-width: 100%;
+        margin-top:0px ;
+    }
 
+    .container .info {
+        padding-top: 10px;
+    }
+
+    .container .info h2 {
+        font-size: 25px;
+        line-height: 40px;
+    }
 }
+/* MEDIA QUERY ATE 768 */
+@media (min-width:426px) and (max-width:768px) {
+    
+    .header .logo {
+        height: 40px;
+    }
+    .container{
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        gap: 30px;
+    }
 
+    .container .info {
+        text-align: center;
+        max-width: 100%;
+        padding-top: 20px;
+    }
+
+    .footer {
+        height: 70px;
+        margin: 20px auto;
+    }
+}
+/* MEDIA QUERY ATE 425 */
 @media (max-width:425px) {
+    
     body {
         background:var(--background) url(../images/bg-mobile.svg) no-repeat ;
+        padding: 20px;
     }
     
     .logo{
@@ -15,7 +57,6 @@
 
     .container {
     width: 100%;
-    height: 100vh;
     flex-direction: column;   
     padding: 0 20px;
     margin: 0;
@@ -23,35 +64,47 @@
 
    .container img {
     max-width: 100%;
+    padding-top: 20px;
    }
 
-   .container .info {
-    
+   .container .info {    
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 0px;
-
    }
 
    .container .info h2{
     margin-bottom: 20px;
     text-align: center;
-    /* max-width: 500px; */
+    font-size: 25px;
+    line-height: 40px;
    }
+
    .container .info p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 25px;
    }
 
    .container .info .btn-register {
-    padding: 15px 90px;
-    margin-top: 10px;
+    padding: 10px 70px;
+    margin-top: 5px;
     margin-bottom: 30px;
+    font-size: 15px;
+   }
+
+   .footer {
+    margin: 40px auto;
+    height: 80px;
    }
 
    .footer .social {
-    justify-content: center;
+    justify-content: center;    
    }
-    
+
+   .footer .social a {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+   }    
 }
