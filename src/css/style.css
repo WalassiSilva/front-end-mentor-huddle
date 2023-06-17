@@ -70,7 +70,8 @@ main {
 
 .container .info .btn-register:hover {
     background-color: var(--hover);
-    color: #fff;    
+    color: #fff; 
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);   
 }
 
 .footer {
